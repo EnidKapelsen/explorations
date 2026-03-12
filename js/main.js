@@ -29,6 +29,22 @@ function initMobileAutoPlay() {
 
     const projects = document.querySelectorAll('.project');
 
+    // On iOS, a single user interaction unlocks video playback.
+    // We trigger a muted load on first touch to prime all videos.
+    let primed = false;
+    function primeVideos() {
+        if (primed) return;
+        primed = true;
+        projects.forEach(project => {
+            const video = project.querySelector('video.project-animated');
+            if (video) {
+                video.load();
+            }
+        });
+        document.removeEventListener('touchstart', primeVideos);
+    }
+    document.addEventListener('touchstart', primeVideos, { once: true });
+
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -43,12 +59,14 @@ function initMobileAutoPlay() {
             if (entry.isIntersecting) {
                 project.classList.add('is-visible');
                 if (video) {
+                    video.currentTime = 0;
                     video.play().catch(() => {});
                 }
             } else {
                 project.classList.remove('is-visible');
                 if (video) {
                     video.pause();
+                    video.currentTime = 0;
                 }
             }
         });
