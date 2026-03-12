@@ -87,6 +87,9 @@ function initDesktopHover() {
         const video = preview.querySelector('video.project-animated');
         if (!video) return;
 
+        // Ensure video is ready before first hover (fixes Firefox)
+        video.preload = 'auto';
+
         preview.addEventListener('mouseenter', () => {
             video.currentTime = 0;
             video.play().catch(() => {});

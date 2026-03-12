@@ -751,7 +751,8 @@ a:hover {
     padding: var(--space-md);
 }
 
-.btn-back {
+.btn-back,
+.btn-next {
     display: inline-flex;
     align-items: center;
     gap: var(--space-xs);
@@ -767,11 +768,20 @@ a:hover {
     transition: all 0.2s ease, font-weight 0.15s ease;
 }
 
-.btn-back:hover {
+.btn-back:hover,
+.btn-next:hover {
     background: var(--text-primary);
     border-color: var(--text-primary);
     color: var(--bg-primary);
     font-weight: var(--weight-bold);
+}
+
+.project-nav-next {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    padding: var(--space-md);
 }
 
 .back-arrow {
