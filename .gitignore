@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Quelldateien (nicht web-tauglich)
+*.NEF
+*.psd
+*.MOV
+*.heic
+*.rtf
+*.pdf
+
+# Font-Formate (nur .woff2/.woff werden im CSS referenziert)
+*.otf
+*.ttf
+
+# Statische Font-Schnitte (nur Variable-Ordner werden gebraucht)
+ABC Repro/ABC Repro/
+ABC Repro/ABC Repro Mono/
+
+# Grosse nicht-referenzierte Videos
+media/projects/Badeschluss/Badeschluss Bluntautal.mp4
+media/projects/Memory Leaks/aero_recording.MP4
+media/projects/Memory Leaks/aero_recording 5.MP4
+media/projects/The Artist is not Present/The_Artist_is_not_Present_2022.mp4
+
+# Development / Screenshots
+PORTFOLIO-PLAN.md
+Bildschirmfoto*.png
+favicon-original.png

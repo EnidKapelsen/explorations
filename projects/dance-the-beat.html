@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance the Beat - Exploring Interactions</title>
+    <meta property="og:title" content="Dance the Beat - Exploring Interactions">
+    <meta property="og:description" content="The dancer's movement controls the rhythm.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://explorations.ankeriemer.de/projects/dance-the-beat.html">
+    <meta property="og:image" content="https://explorations.ankeriemer.de/media/projects/Dance the Beat/IMG_4718.jpeg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon-32.png?v=3">
+    <link rel="icon" type="image/png" sizes="64x64" href="../media/favicon-64.png?v=3">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="project-page">
+    <!-- Back Navigation -->
+    <nav class="project-nav">
+        <a href="../index.html" class="btn-back">
+            <span class="back-arrow">&larr;</span>
+            <span>Back</span>
+        </a>
+    </nav>
+
+    <main class="project-detail">
+        <article class="project-content">
+            <header class="project-header">
+                <h1>Dance the Beat</h1>
+                <p class="project-meta">
+                    <span class="meta-item"><strong>Year:</strong> 2019</span>
+                    <span class="meta-item"><strong>Medium:</strong> Interactive Installation</span>
+                    <span class="meta-item"><strong>Context:</strong> <a href="https://schmiedehallein.com/" target="_blank" rel="noopener">Schmiede Hallein</a></span>
+                </p>
+            </header>
+
+            <div class="project-media">
+                <figure class="media-hero">
+                    <img src="../media/projects/Dance the Beat/IMG_4718.jpeg" alt="Participant using the wand">
+                </figure>
+
+                <video controls class="media-hero-video">
+                    <source src="../media/projects/Dance the beat/dance-video.mp4" type="video/mp4">
+                </video>
+
+                <!-- Documentation -->
+                <h3 class="media-section-title">Documentation</h3>
+                <div class="media-grid">
+                    <figure>
+                        <img src="../media/projects/Dance the Beat/IMG_4718.jpeg" alt="Participant using the wand">
+                    </figure>
+                    <figure>
+                        <img src="../media/projects/Dance the beat/IMG_4688.jpg" alt="Dance the Beat documentation">
+                    </figure>
+                    <figure>
+                        <img src="../media/projects/Dance the beat/IMG_4722.jpg" alt="Dance the Beat documentation">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="project-essay">
+                <p>What happens when dancers control the rhythm of music, rather than the other way around?</p>
+                <p>This question led to a series of experiments with MIDI input, Arduino boards, and movement as a tempo controller. The result: a wand whose motion directly controls the rhythm of music.</p>
+                <p>While the initial vision involved dancers steering complex compositions through movement, the prototype was deliberately simplified. Familiar songs with straightforward beats worked best—allowing participants to immediately feel the impact of their gestures.</p>
+                <p>The installation premiered at Schmiede Hallein's final exhibition as a mini-disco. The dance wand controlled the room's music, letting one participant's movement set the rhythm for everyone. The traditional hierarchy between music and dancer was reversed: here, the body leads and the beat follows.</p>
+            </div>
+
+            <div class="project-credits">
+                <h4>Creatives</h4>
+                <ul>
+                    <li>Anke Riemer</li>
+                    <li><a href="https://davidgrieshammer.com/" target="_blank" rel="noopener">David Grieshammer</a> - tech support</li>
+                </ul>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Anke Riemer · <a href="../impressum.html">Impressum</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

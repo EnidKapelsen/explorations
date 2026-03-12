@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Exploring Interactions</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32.png?v=3">
+    <link rel="icon" type="image/png" sizes="64x64" href="media/favicon-64.png?v=3">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="project-page">
+    <!-- Back Navigation -->
+    <nav class="project-nav">
+        <a href="index.html" class="btn-back">
+            <span class="back-arrow">&larr;</span>
+            <span>Back</span>
+        </a>
+    </nav>
+
+    <main class="project-detail">
+        <article class="project-content">
+            <header class="project-header">
+                <h1>Imprint</h1>
+            </header>
+
+            <div class="project-essay">
+                <p>This website presents artistic side projects, experiments and collaborations.</p>
+                <p>For contact information and full legal details, please visit <a href="https://ankeriemer.de/site-notice/" target="_blank" rel="noopener">ankeriemer.de/site-notice</a>.</p>
+                <p>All photographs by Anke Riemer unless otherwise noted.</p>
+
+                <h2 style="margin-top: 2rem;">Credits</h2>
+                <p>ABC Repro font provided by awesome Dinamo Typefaces 🩶</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Anke Riemer</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
